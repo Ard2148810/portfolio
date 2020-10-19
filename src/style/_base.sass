@@ -1,0 +1,19 @@
+$colorPrimary: #2d4059
+$colorSecondary: #ea5455
+$colorAlt1: #decdc3
+$colorAlt2: #e5e5e5
+
+=font($font-file, $font-weight, $font-style)
+  @font-face
+    font-family: 'Roboto Condensed'
+    src: url('./fonts/Roboto_Condensed/' + $font-file + '.ttf') format('truetype')
+    font-weight: $font-weight
+    font-style: $font-style
+    font-display: swap
+
++font('RobotoCondensed-BoldItalic', 'bold', 'italic')
++font('RobotoCondensed-Bold', 'bold', 'normal')
++font('RobotoCondensed-Italic', 'normal', 'italic')
++font('RobotoCondensed-LightItalic', 300, 'italic')
++font('RobotoCondensed-Light', 300, 'normal')
++font('RobotoCondensed-Regular', 'normal', 'normal')
