@@ -1,8 +1,10 @@
+// Color palette
 $colorPrimary: #2d4059
 $colorSecondary: #ea5455
 $colorAlt1: #decdc3
 $colorAlt2: #e5e5e5
 
+// Fonts
 =font($font-file, $font-weight, $font-style)
   @font-face
     font-family: 'Roboto Condensed'
@@ -17,3 +19,8 @@ $colorAlt2: #e5e5e5
 +font('RobotoCondensed-LightItalic', 300, 'italic')
 +font('RobotoCondensed-Light', 300, 'normal')
 +font('RobotoCondensed-Regular', 'normal', 'normal')
+
+// Reset default styling
+html, body, div, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0

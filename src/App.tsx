@@ -1,14 +1,13 @@
 import React from 'react';
 import './style/style.sass'
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <p>
-          Learning <span className="ts">TypeScript</span> and <span className="sass">SASS</span>
-        </p>
-      </header>
+      <Header/>
+      <Main/>
     </div>
   );
 }

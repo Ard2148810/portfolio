@@ -1,0 +1,44 @@
+@import "base"
+
+header
+  color: $colorAlt2
+  display: flex
+  flex-wrap: nowrap
+  min-height: 100vh
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  flex: 1
+  position: relative
+  background: linear-gradient(to top,$colorPrimary, 50%, rgba(45, 64, 89, 0.8) ), url("/header-background.jpg") fixed no-repeat center
+  perspective: 1px
+
+h1, h3
+  text-transform: uppercase
+  text-align: center
+
+.name-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 30vh
+  margin-bottom: auto
+
+.header-scroll
+  margin-bottom: 10px
+
+.special-letter
+  color: $colorSecondary
+  position: relative
+
+.special-letter:after
+  content: attr(data-char)
+  position: absolute
+  color: $colorAlt2
+  left: 0
+  top: 0
+
+
+
+
+
