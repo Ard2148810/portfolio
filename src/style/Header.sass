@@ -1,4 +1,7 @@
 @import "base"
+@import "animations"
+
+$fadeInAnimationValues: 2s ease-out 0s 1 fadeIn
 
 header
   color: $colorAlt2
@@ -17,6 +20,13 @@ h1, h3
   text-transform: uppercase
   text-align: center
 
+h3
+  animation: $fadeInAnimationValues
+
+.btn-invisible
+  background-color: transparent
+  padding: 15px
+
 .name-container
   display: flex
   flex-direction: column
@@ -26,6 +36,7 @@ h1, h3
 
 .header-scroll
   margin-bottom: 10px
+  animation: $fadeInAnimationValues, 1s ease-out 2s infinite upAndDown
 
 .special-letter
   color: $colorSecondary
@@ -38,7 +49,7 @@ h1, h3
   left: 0
   top: 0
 
-
-
+.opacity-transition
+  transition: opacity 0.5s
 
 
