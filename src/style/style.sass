@@ -1,5 +1,28 @@
 @import "base"
 
+// Reset default styling
+html, body, div, h1, h2, h3, h4, h5, h6, button
+  margin: 0
+  padding: 0
+
+.btn
+  background-color: $colorSecondary
+  padding: 6px 12px 6px 12px
+  border-radius: 5px
+  border: none
+  color: #e5e5e5
+
+.btn.disabled
+  pointer-events: none
+  cursor: default
+
+button:hover
+  cursor: pointer
+
+html
+  scroll-behavior: smooth
+
 body
   background-color: $colorAlt2
   font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Lato, Arial, sans-serif
+

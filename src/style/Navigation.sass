@@ -1,0 +1,54 @@
+@import "base"
+
+.navigation
+  background-color: $colorSecondary
+  color: $colorAlt2
+
+.nav-list
+  display: flex
+  flex-direction: row
+  list-style-type: none
+  background-color: inherit
+  margin: 0
+  padding: 0
+  flex-wrap: wrap
+
+.nav-item
+  flex: 1
+
+.item-connect
+  display: flex
+  flex-direction: row
+  justify-content: center
+  padding: 15px 0 15px 0
+
+%connect
+  border-bottom: 1px solid
+  flex: 1
+  margin-bottom: 7.5px
+  margin-left: -1px
+  margin-right: -1px
+  overflow: visible
+
+.connect-left
+  @extend %connect
+
+.connect-right
+  @extend %connect
+
+.nav-item a, a:visited
+  color: $colorAlt2
+  text-decoration: none
+
+.nav-item a
+  padding-top: 15px
+  padding-bottom: 15px
+  display: inline-block
+  text-align: center
+  width: 100%
+  transition: background-color 300ms
+
+
+.nav-item a:hover
+  background-color: lighten($colorSecondary, 3%)
+
