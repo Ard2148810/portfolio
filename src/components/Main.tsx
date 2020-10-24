@@ -1,43 +1,11 @@
 import React from "react";
+import ContentScroller from "./ContentScroller/ContentScroller";
+import "../style/Main.sass"
 
 const Main = () => {
     return (
-        <main id="main">
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
-            <p>Something will be here soon.</p>
+        <main className="Main" id="main">
+            <ContentScroller/>
         </main>
     )
 }
