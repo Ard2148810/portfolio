@@ -2,4 +2,54 @@
 
 .content
   background-color: $colorAlt2
-  padding: 15px
+
+address
+  font-style: normal
+  font-size: 2em
+  padding: 20px
+  color: $colorPrimary
+  margin-top: 50px
+  margin-bottom: 50px
+address a
+  padding: 5px
+  margin: 5px
+  display: block
+
+.address-item
+  color: $colorPrimary
+
+.content-contact
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  min-height: 80vh
+
+.contact-data-container
+  display: flex
+  align-items: center
+
+.content-contact div
+  flex: 1
+
+.contact-label
+  margin: 15px
+
+.contact-title
+  display: flex
+  font-size: 3em
+  background-color: $colorAlt1
+  color: $colorSecondary
+  align-items: center
+  justify-content: right
+
+@media screen and (max-width: 1080px)
+  .contact-title
+    font-size: 2em
+    justify-content: center
+
+  address
+    font-style: normal
+    font-size: 1em
+    padding: 10px
+

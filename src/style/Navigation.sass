@@ -12,9 +12,14 @@
   margin: 0
   padding: 0
   flex-wrap: wrap
+  min-height: 20vh
 
 .nav-item
+  display: flex
   flex: 1
+  justify-content: center
+  align-items: center
+  font-size: 1.2em
 
 .item-connect
   display: flex
@@ -36,7 +41,7 @@
 .connect-right
   @extend %connect
 
-.nav-item a, a:visited
+.nav-item a, .nav-item a:visited
   color: $colorAlt2
   text-decoration: none
 
@@ -51,4 +56,7 @@
 
 .nav-item a:hover
   background-color: lighten($colorSecondary, 3%)
+
+.header-scroll
+  color: $colorAlt2
 

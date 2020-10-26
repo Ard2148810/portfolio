@@ -1,6 +1,8 @@
 import React from "react";
 import "../../style/Content.sass"
 import { Switch, Route } from "react-router-dom"
+import Contact from "./Contact";
+import Skills from "./Skills";
 
 class Content extends React.Component<{}, {}> {
     render() {
@@ -8,10 +10,10 @@ class Content extends React.Component<{}, {}> {
             <div className="content">
                 <Switch>
                     <Route path="/skills">
-                        Skills...
+                        <Skills/>
                     </Route>
                     <Route path="/contact">
-                        Contact...
+                        <Contact/>
                     </Route>
                     <Route path="*">
                         About me...
