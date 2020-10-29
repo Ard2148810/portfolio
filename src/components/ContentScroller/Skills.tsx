@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/Skills.sass"
-import SkillItem from "../../style/SkillItem";
+import SkillItem from "./SkillItem";
 
 class Skills extends React.Component<{}, {}>{
     render() {
