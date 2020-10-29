@@ -1,3 +1,4 @@
 # Portfolio Adrian Ałaszewski
 
-*Work in progress, come back soon!*
+Website about me. Check it out:
+https://alaszewski.netlify.app/
