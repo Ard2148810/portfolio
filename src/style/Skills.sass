@@ -1,0 +1,41 @@
+@import "base"
+$itemColor: $colorPrimary
+
+.content-skills
+  min-height: 80vh
+
+.skill-item-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  min-height: 80vh
+
+
+.skill-item
+  display: flex
+  min-height: 250px
+  flex: 1 250px
+  margin: 10px
+  justify-content: center
+  align-items: center
+  transition: transform 0.8s
+  &-1
+    background-color: $colorAlt1
+  &-2
+    background-color: darken($colorAlt2, 10%)
+  &-3
+    background-color: lighten($colorPrimary, 50%)
+  &-4
+    background-color: lighten($colorSecondary, 30%)
+
+.skill-item:hover
+  transform: scale(1.05, 1.05)
+
+
+@media screen and (max-width: 1080px)
+  .skill-item
+    min-height: 150px
+    flex: 1 150px
+
+
+

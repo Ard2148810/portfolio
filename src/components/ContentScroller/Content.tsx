@@ -3,6 +3,7 @@ import "../../style/Content.sass"
 import { Switch, Route } from "react-router-dom"
 import Contact from "./Contact";
 import Skills from "./Skills";
+import About from "./About";
 
 class Content extends React.Component<{}, {}> {
     render() {
@@ -16,7 +17,7 @@ class Content extends React.Component<{}, {}> {
                         <Contact/>
                     </Route>
                     <Route path="*">
-                        About me...
+                        <About/>
                     </Route>
                 </Switch>
             </div>
